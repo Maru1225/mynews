@@ -90,10 +90,10 @@ public function index(Request $request)
       
       $profile->fill($profile_form)->save();
       
-       $profile_history = new ProfileHistory;
-        $profile_history ->profile_id = $profile->id;
-        $profile_history ->edited_at = Carbon::now();
-        $profile_history->save();
+       $profilehistory = new Profilehistory;
+        $profilehistory ->profile_id = $profile->id;
+        $profilehistory ->edited_at = Carbon::now();
+        $profilehistory->save();
 
       return redirect('admin/profile');
   }
