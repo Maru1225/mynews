@@ -1,7 +1,7 @@
 @extends('layouts.front')
 @section('title', 'ニュース')
 @section('content')
-    <div class="container">
+     <div class="container">
         <hr color="#c0c0c0">
         @if (!is_null($headline))
             <div class="row">
@@ -11,9 +11,7 @@
                             <div class="caption mx-auto">
                                 <div class="image">
                                     @if ($headline->image_path)
-                                        <img src="{{ secure_asset('storage/image/' . $headline->image_path) }}">
-                                        @else
-                                        <img src="/storage/noimage.png">
+                                        <img src="{{ asset('storage/image/' . $headline->image_path) }}">
                                     @endif
                                 </div>
                                 <div class="title p-2">

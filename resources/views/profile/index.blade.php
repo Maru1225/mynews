@@ -4,7 +4,10 @@
     <div class="container">
         
          <div class="row"> 
+        
+        
           <div class="col-md-12 ">
+           <p class="h1">My Profile</p>
        <div class="card">
           <div class="image mx-auto">
                                 @if ($posts->user_avatar_path)
@@ -22,7 +25,7 @@
      
      <div class="content">
          <div class="mx-4">
-         <p class ="main">性別</p>
+           <p class ="main">性別</p>
          <p class="body mx-auto">{{ $posts->gender }}</p>
           </div>
      <hr color="#c0c0c0">   
